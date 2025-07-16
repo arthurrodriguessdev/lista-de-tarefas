@@ -1,15 +1,18 @@
 <!--Estrutura base para todos os templates. Template pai, vai passar a herança-->
+{% load static %} <!--Para carregar os arquivos estáticos. CSS, JS, bootstrap-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!--Carregando CSS-->
 </head>
 <body>
     <p>Barra de navegação</p>
     {% block content %}
     {% endblock %}
     <p>Rodapé de página</p>
+    <script src="{% static 'js/scripts.js' %}"></script> <!--Carregando JS-->
 </body>
 </html>
