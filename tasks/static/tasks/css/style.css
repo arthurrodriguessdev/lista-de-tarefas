@@ -1,0 +1,36 @@
+h1{
+    color: blueviolet;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar{
+    margin-bottom: 20px;
+    border-bottom: 3px solid #254fc2;
+    padding: 20px;
+    
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #254fc2;
+    height: 300px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
